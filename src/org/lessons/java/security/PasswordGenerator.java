@@ -17,6 +17,7 @@ public class PasswordGenerator {
         int yearOfBirth;
         int sumBirthInfo;
         String birthInfo ;
+        String password;
 
 
 
@@ -51,7 +52,7 @@ public class PasswordGenerator {
         sumBirthInfo = dayOfBirth + monthOfBirth + yearOfBirth;
 
         System.out.println("the sum is:" + sumBirthInfo);
-        String password = name + surname + favoriteColor + sumBirthInfo;
+         password = name +"-" + surname +"-" +favoriteColor+ "-"+sumBirthInfo;
         System.out.println("your password is:" + password);
     }
 }
